@@ -72,28 +72,28 @@ A role-based web application that allows Admins, Students, and Visitors to inter
    sudo apt install apache2 mysql-server php libapache2-mod-php php-mysql
 
    ```
-2. **Move your project to /var/www/html: **
+2. Move your project to /var/www/html: 
    ```bash
    sudo cp -r your_project_directory /var/www/html/college-event-system
 
    ```
-3. **Setup MySQL database: **
+3. Setup MySQL database: 
    ```bash
    mysql -u root -p
    ```
-   **Inside MySQL: **
+   Inside MySQL: 
    ```sql
    CREATE DATABASE events;
    USE events;
    -- Then paste your SQL schema or use:
    SOURCE /path/to/events_backup.sql;
    ```
-4. **Update db_config.php: **
+4. Update db_config.php: 
    ```php
    $pdo = new PDO("mysql:host=localhost;dbname=events", "your_username", "your_password");
 
    ```
-5. **Access in browser: **
+5. Access in browser: 
    ```
   http://localhost/EventSys/index.html
 
