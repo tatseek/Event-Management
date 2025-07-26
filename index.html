@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome - College Event System</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #8360c3, #2ebf91);
+      color: #fff;
+      text-align: center;
+      padding-top: 80px;
+    }
+    h1 {
+      font-size: 2.5rem;
+    }
+    .role-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 40px;
+    }
+    .role-buttons a {
+      text-decoration: none;
+      padding: 20px 40px;
+      background-color: rgba(255, 255, 255, 0.2);
+      color: #fff;
+      font-size: 1.2rem;
+      border-radius: 10px;
+      transition: all 0.3s;
+    }
+    .role-buttons a:hover {
+      background-color: #fff;
+      color: #2ebf91;
+      }
+  </style>
+</head>
+<body>
+  <h1>Welcome to College Event Management System</h1>
+  <p>Please select your role to continue:</p>
+
+  <div class="role-buttons">
+    <a href="admin_login.php">Admin</a>
+    <a href="student_login.php">Student</a>
+    <a href="visitor_login.php">Visitor</a>
+  </div>
+</body>
+</html>
+
